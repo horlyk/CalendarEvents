@@ -7,16 +7,6 @@ use DateTime;
 
 class OrderFactory
 {
-    public function createFromApiResponse(array $apiItem): Order
-    {
-        return (new Order())
-            ->setCreatedAt(new DateTime($apiItem['purchase_date']))
-            ->setProductName($apiItem['name'])
-            ->setPrice($apiItem['price'])
-            ->setShippingInfo($apiItem['delivery_information'])
-        ;
-    }
-
     public function create(DateTime $createdAt, string $productName, float $price, string $shippingInfo): Order
     {
         return (new Order())

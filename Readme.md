@@ -11,7 +11,7 @@ commit (squash if needed).
 
 #Run
 In order to tun the project you need ``symfony cli installer`` or a working web-server like nginx. 
-You can install `symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
+You can install ``symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
 
 Then run ``symfony serve`` to run your local server and then you're ready to go!
 

@@ -2,7 +2,7 @@
 
 namespace App\Factory;
 
-use App\Entity\Birthday;
+use App\Entity\Events\Birthday;
 use DateTime;
 
 class BirthdayFactory

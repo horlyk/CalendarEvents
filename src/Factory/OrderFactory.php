@@ -2,7 +2,7 @@
 
 namespace App\Factory;
 
-use App\Entity\Order;
+use App\Entity\Orders\Order;
 use DateTime;
 
 class OrderFactory

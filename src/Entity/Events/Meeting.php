@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Events;
 
-use App\Repository\MeetingRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=MeetingRepository::class)
+ * @ORM\Entity()
  */
 class Meeting
 {

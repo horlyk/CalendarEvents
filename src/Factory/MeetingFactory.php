@@ -2,7 +2,7 @@
 
 namespace App\Factory;
 
-use App\Entity\Meeting;
+use App\Entity\Events\Meeting;
 use DateTime;
 
 class MeetingFactory

@@ -1,0 +1,547 @@
+{% set explanationPath = 'partials/example_explanation_block.html.twig' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <h1>Calendar</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-01 {% include explanationPath with { explanation: "Day date"} %}
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order_api) {% include explanationPath with { explanation: "Event type"} %}
+                                IPond mega {% include explanationPath with { explanation: "Event title"} %}
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">01/12/2050 17:59{% include explanationPath with { explanation: "Event date"} %}
+                                <li class="list-group-item">
+                                    The price of a product is 667.000000. Shipping info: to pond use IPond! delivery is free!
+                                    {% include explanationPath with { explanation: "Event description"} %}
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-02
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-03
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (meeting) Sleeping
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">03/12/2050 00:00</li>
+                                <li class="list-group-item">Do nothing at all...</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-04
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order) IBoots
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">04/12/2050 00:00</li>
+                                <li class="list-group-item">The price of a product is 4733.000000. Shipping info: Takeaway!</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-05
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-06
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order) IHat
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">06/12/2050 00:00</li>
+                                <li class="list-group-item">The price of a product is 157.000000. Shipping info: Takeaway!</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-07
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-08
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (birthday) Bill Smith
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">08/12/2050 00:00</li>
+                                <li class="list-group-item">Met this guy in 1920</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-09
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order) IScarf
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">09/12/2050 00:00</li>
+                                <li class="list-group-item">The price of a product is 4806.000000. Shipping info: </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-10
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (meeting) Celebrating my birthday
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">10/12/2050 00:00</li>
+                                <li class="list-group-item">Do nothing at all...</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-11
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-12
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-13
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-14
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-15
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (meeting) Playing football
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">15/12/2050 00:00</li>
+                                <li class="list-group-item">Do nothing at all...</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-16
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-17
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (birthday) Bob Moraes
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">17/12/2050 00:00</li>
+                                <li class="list-group-item">He&#039;s so old...</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-18
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-19
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (meeting) Playing football
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">19/12/2050 00:00</li>
+                                <li class="list-group-item">Just to buy an IPond as a gift</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-20
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (meeting) Hunting a bear
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">20/12/2050 00:00</li>
+                                <li class="list-group-item">Just to buy an IPond as a gift</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-21
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (birthday) Will Jones
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">21/12/2050 00:00</li>
+                                <li class="list-group-item">Congratulate him one day before</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-22
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-23
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-24
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-25
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (birthday) Will Smith
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">25/12/2050 00:00</li>
+                                <li class="list-group-item">Met this guy in 1920</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-26
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-27
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-28
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-29
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-30
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-12-31
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (birthday) Bob Smith
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">31/12/2050 00:00</li>
+                                <li class="list-group-item">Congratulate him one day before</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order) IHat
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">31/12/2050 00:00</li>
+                                <li class="list-group-item">The price of a product is 4319.000000. Shipping info: Takeaway!</li>
+                            </ul>
+                        </div>
+
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order) IScarf
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">31/12/2050 00:00</li>
+                                <li class="list-group-item">The price of a product is 7685.000000. Shipping info: By ITram tomorrow morning</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            2050-01-31
+                        </div>
+                        <div class="card" style="margin-left: 70px;">
+                            <div class="card-header">
+                                (order_api) IPond mega XL
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">31/01/2050 17:30</li>
+                                <li class="list-group-item">The price of a product is 668.000000. Shipping info: Delivery is not free!</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

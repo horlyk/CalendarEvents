@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Orders;
 
-use App\Repository\OrderRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=OrderRepository::class)
+ * @ORM\Entity()
  * @ORM\Table(name="`order`")
  */
 class Order

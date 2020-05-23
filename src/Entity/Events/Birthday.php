@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Entity;
+namespace App\Entity\Events;
 
-use App\Repository\BirthdayRepository;
 use DateTimeInterface;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=BirthdayRepository::class)
+ * @ORM\Entity()
  */
 class Birthday
 {

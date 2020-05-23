@@ -5,9 +5,10 @@ namespace App\DataFixtures;
 use App\Factory\MeetingFactory;
 use DateTime;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class Meeting extends Fixture
+class Meeting extends Fixture implements FixtureGroupInterface
 {
     use GetRandomItemTrait;
 
@@ -57,5 +58,10 @@ class Meeting extends Fixture
         ];
 
         return $this->getRandomItem($data);
+    }
+
+    public static function getGroups(): array
+    {
+        return ['events'];
     }
 }

@@ -9,6 +9,7 @@
         "doctrine/annotations": "^1.10",
         "friendsofphp/php-cs-fixer": "^2.16",
         "symfony/console": "5.0.*",
+        "symfony/debug-pack": "^1.0",
         "symfony/dotenv": "5.0.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "5.0.*",
@@ -55,7 +56,16 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "init-project": [
+            "bin/console d:d:c --no-interaction",
+            "bin/console d:s:c --no-interaction",
+            "bin/console d:f:l --group=events --no-interaction",
+            "bin/console d:d:c --connection=orders --no-interaction",
+            "bin/console d:s:c --em=orders --no-interaction",
+            "bin/console d:f:l --group=orders --em=orders --no-interaction"
+        ],
+        "fix-cs": ["vendor/bin/php-cs-fixer fix"]
     },
     "conflict": {
         "symfony/symfony": "*"

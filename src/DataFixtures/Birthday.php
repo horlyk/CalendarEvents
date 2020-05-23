@@ -5,9 +5,10 @@ namespace App\DataFixtures;
 use App\Factory\BirthdayFactory;
 use DateTime;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Bundle\FixturesBundle\FixtureGroupInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class Birthday extends Fixture
+class Birthday extends Fixture implements FixtureGroupInterface
 {
     use GetRandomItemTrait;
 
@@ -71,5 +72,10 @@ class Birthday extends Fixture
         ];
 
         return $this->getRandomItem($data);
+    }
+
+    public static function getGroups(): array
+    {
+        return ['events'];
     }
 }

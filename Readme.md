@@ -1,13 +1,37 @@
-# Calendar item fields:
+# Installation
+
+1. ``composer install``
+2. ``composer init-project``
+
+#Run
+In order to tun the project you need ``symfony cli installer`` or a working web-server like nginx. 
+You can install `symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
+
+Then run ``symfony serve`` to run your local server and then you're ready to go!
+
+# Example
+Open the ``/example`` page and look at the example.
+
+## What is done
+1. Controller
+2. Entities
+3. Multiple databases setup 
+4. Twig templates
+
+## Codestyle
+In order to fix your codestyle according to a @Symfony preset run ``composer fix-cs``
+
+## Calendar event fields:
+You can set ``$type`` t with the source of data like "birthday", "order", "meeting" or "order-api"
 
 ```php
-private DateTimeInterface $date;
+DateTimeInterface $date;
 
-private string $title;
+string $title;
 
-private string $description;
+string $description;
 
-private string $type;
+string $type;
 ```
 
 ## Order API response example:    

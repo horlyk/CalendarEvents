@@ -13,6 +13,17 @@ class CalendarPageController extends AbstractController
      */
     public function index(): Response
     {
+        // ToDo start coding here
         return $this->render('calendar/index.html.twig');
+    }
+
+    /**
+     * This is an example.
+     *
+     * @Route("/example", name="example")
+     */
+    public function example(): Response
+    {
+        return $this->render('example.html.twig');
     }
 }

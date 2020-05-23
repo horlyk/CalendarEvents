@@ -1,18 +1,37 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
+        default_connection: events
+        connections:
+            events:
+                url: '%env(resolve:EVENTS_DATABASE_URL)%'
+            orders:
+                url: '%env(resolve:ORDERS_DATABASE_URL)%'
 
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '5.7'
     orm:
+        default_entity_manager: events
         auto_generate_proxy_classes: true
-        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
-        auto_mapping: true
-        mappings:
-            App:
-                is_bundle: false
-                type: annotation
-                dir: '%kernel.project_dir%/src/Entity'
-                prefix: 'App\Entity'
-                alias: App
+        entity_managers:
+            events:
+                connection: events
+                auto_mapping: true
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                mappings:
+                    Events:
+                        is_bundle: false
+                        type: annotation
+                        dir: '%kernel.project_dir%/src/Entity/Events'
+                        prefix: 'App\Entity\Events'
+                        alias: Events
+            orders:
+                connection: orders
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                mappings:
+                    Orders:
+                        is_bundle: false
+                        type: annotation
+                        dir: '%kernel.project_dir%/src/Entity/Orders'
+                        prefix: 'App\Entity\Orders'
+                        alias: Orders

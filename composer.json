@@ -58,12 +58,12 @@
             "@auto-scripts"
         ],
         "init-project": [
-            "bin/console d:d:c --no-interaction",
-            "bin/console d:s:c --no-interaction",
-            "bin/console d:f:l --group=events --no-interaction",
-            "bin/console d:d:c --connection=orders --no-interaction",
-            "bin/console d:s:c --em=orders --no-interaction",
-            "bin/console d:f:l --group=orders --em=orders --no-interaction"
+            "php bin/console d:d:c --no-interaction",
+            "php bin/console d:s:c --no-interaction",
+            "php bin/console d:f:l --group=events --no-interaction",
+            "php bin/console d:d:c --connection=orders --no-interaction",
+            "php bin/console d:s:c --em=orders --no-interaction",
+            "php bin/console d:f:l --group=orders --em=orders --no-interaction"
         ],
         "fix-cs": ["vendor/bin/php-cs-fixer fix"]
     },

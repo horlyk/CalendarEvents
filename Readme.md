@@ -1,22 +1,20 @@
 # Tasks
-1. During an interview write the fastest solution as possible (ugly code is welcome) and commit the changes in one 
-commit (squash if needed).
-2. After an interview create refactor the code to be reusable, flexible and scalable and commit the changes in one 
-commit (squash if needed).
+1. During an interview write the fastest solution as possible (ugly code is welcome) and commit the changes (in one commit, squash if needed).
+2. After an interview refactor your code to be reusable, flexible and scalable and commit the changes (in one commit, squash if needed).
 
 # Installation
 
 1. ``composer install``
 2. ``composer init-project``
 
-#Run
-In order to tun the project you need ``symfony cli installer`` or a working web-server like nginx. 
+# Run
+In order to run the project you will need a ``symfony cli installer`` or a working web-server like nginx. 
 You can install ``symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
 
-Then run ``symfony serve`` to run your local server and then you're ready to go!
+Then run ``symfony serve`` to run your local server and you're ready to go!
 
 # Example
-Open the ``/example`` page and look at the example.
+Open the ``/example`` page.
 
 ## What is done
 1. Controller
@@ -28,7 +26,7 @@ Open the ``/example`` page and look at the example.
 In order to fix your codestyle according to a @Symfony preset run ``composer fix-cs``
 
 ## Calendar event fields:
-You can set ``$type`` t with the source of data like "birthday", "order", "meeting" or "order-api"
+You can set ``$type`` with the source of data like "birthday", "order", "meeting" or "order-api"
 
 ```php
 DateTimeInterface $date;

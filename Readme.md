@@ -1,6 +1,6 @@
 # Tasks
-1. During an interview write the fastest solution as possible (ugly code is welcome) and commit the changes (in one commit, squash if needed).
-2. After an interview refactor your code to be reusable, flexible and scalable and commit the changes (in one commit, squash if needed).
+1. Write the fastest solution as possible (ugly code is welcome) and commit the changes (in one commit, squash if needed).
+2. Refactor your code to be reusable, flexible and scalable and commit the changes (in one commit, squash if needed).
 
 # Installation
 

@@ -12,7 +12,7 @@
 2. ``cd docker && docker exec -it calendar_events_php bash``
 3. ``composer install``
 4. ``composer init-project``
-5. Add to your hosts file ``127.0.1.1	calendar-events``
+5. Add to your hosts file ``127.0.0.1	calendar-events``
 
 # Run without docker
 In order to run the project you will need a ``symfony cli installer`` or a working web-server like nginx. 

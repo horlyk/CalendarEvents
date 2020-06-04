@@ -58,13 +58,17 @@
             "@auto-scripts"
         ],
         "init-project": [
+            "rm -rf var/*",
             "php bin/console d:d:c --no-interaction",
             "php bin/console d:s:c --no-interaction",
             "php bin/console d:f:l --group=events --no-interaction",
             "php bin/console d:d:c --connection=orders --no-interaction",
             "php bin/console d:s:c --em=orders --no-interaction",
-            "php bin/console d:f:l --group=orders --em=orders --no-interaction"
+            "php bin/console d:f:l --group=orders --em=orders --no-interaction",
+            "chmod -R 777 var"
         ],
+        "start": ["cd docker && docker-compose up -d --build && cd ../"],
+        "stop": ["cd docker && docker-compose stop && cd ../"],
         "fix-cs": ["vendor/bin/php-cs-fixer fix"]
     },
     "conflict": {

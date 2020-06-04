@@ -2,16 +2,28 @@
 1. Write the fastest solution as possible (ugly code is welcome) and commit the changes (in one commit, squash if needed).
 2. Refactor your code to be reusable, flexible and scalable and commit the changes (in one commit, squash if needed).
 
-# Installation
+# Installation without docker
 
 1. ``composer install``
 2. ``composer init-project``
 
-# Run
+# Installation with docker
+1. ``composer start``
+2. ``cd docker && docker exec -it calendar_events_php bash``
+3. ``composer install``
+4. ``composer init-project``
+5. Add to your hosts file ``127.0.1.1	calendar-events``
+
+# Run without docker
 In order to run the project you will need a ``symfony cli installer`` or a working web-server like nginx. 
 You can install ``symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
 
 Then run ``symfony serve`` to run your local server and you're ready to go!
+
+# Run with docker
+If you've just installed the app - docker containers should be already up.  
+If not - execute ``composer start`` to run your docker server and you're ready to go!  
+Site url is ``http://calendar-events:85/``
 
 # Example
 Open the ``/example`` page.

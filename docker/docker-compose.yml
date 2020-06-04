@@ -1,0 +1,25 @@
+version: "3.1"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: ${PROJECT_NAME}_nginx
+    working_dir: ${PROJECT_MOUNT_DIRECTORY}
+    ports:
+      - ${HOST_PORT}:${REMOTE_PORT}
+    volumes:
+      - ${PROJECT_DIRECTORY}:${PROJECT_MOUNT_DIRECTORY}
+      - ./nginx/site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+
+  php:
+    image: php:7.4-fpm
+    container_name: ${PROJECT_NAME}_php
+    working_dir: ${PROJECT_MOUNT_DIRECTORY}
+    build:
+      context: php
+      args:
+        TIMEZONE: ${TIMEZONE}
+    volumes:
+      - ${PROJECT_DIRECTORY}:${PROJECT_MOUNT_DIRECTORY}

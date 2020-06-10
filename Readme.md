@@ -66,8 +66,15 @@ string $type;
         'id' => 17,
         'name' => 'IPond mega XL',
         'delivery_information' => 'Delivery is not free!',
-        'purchase_date' => '2050-01-31 17:30',
+        'purchase_date' => '2050-12-31 19:30',
         'price' => '668',
+    ],
+    [
+        'id' => 19,
+        'name' => 'IPond M',
+        'delivery_information' => 'No delivery!',
+        'purchase_date' => '2050-12-31 17:30',
+        'price' => '665',
     ],
 ];
 ```

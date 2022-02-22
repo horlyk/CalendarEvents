@@ -1,4 +1,17 @@
-# Tasks
+# Overview
+Imagine that you need to display a calendar of events for one month. You have 3 different sources of data: 2 different 
+databases and one api(see example response in the end). You should collect the data and render it via twig template(all 
+markup and styles are ready). Order output ASC. Example output is provided(see example section). Example of a calendar 
+event itself is provided at the bottom.
+
+# Requirements
+* Display inclusive days starting from 2050-12-01 till 2050-12-31
+* Show empty days
+* If a day has multiple events - group them by date
+* Fake api request using example(see Order API response example)
+* Display each event in format based on example page
+
+# Steps
 1. Write the fastest solution as possible (ugly code is welcome) and commit the changes (in one commit, squash if needed).
 2. Refactor your code to be reusable, flexible and scalable and commit the changes (in one commit, squash if needed).
 
@@ -15,10 +28,7 @@
 5. Add to your hosts file ``127.0.0.1	calendar-events``
 
 # Run without docker
-In order to run the project you will need a ``symfony cli installer`` or a working web-server like nginx. 
-You can install ``symfony cli installer`` via ``wget https://get.symfony.com/cli/installer -O - | bash`` command.
-
-Then run ``symfony serve`` to run your local server and you're ready to go!
+Install ``symfony cli``. Then run ``symfony serve`` to run your local server, and you're ready to go!
 
 # Run with docker
 If you've just installed the app - docker containers should be already up.  

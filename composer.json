@@ -8,27 +8,26 @@
         "ext-pdo_sqlite": "*",
         "composer/package-versions-deprecated": "1.11.99.5",
         "doctrine/annotations": "^1.10",
-        "doctrine/common": "^2",
         "doctrine/doctrine-bundle": "^2",
-        "doctrine/doctrine-migrations-bundle": "^2",
+        "doctrine/doctrine-migrations-bundle": "^3",
         "doctrine/orm": "^2",
         "friendsofphp/php-cs-fixer": "^2.16",
-        "symfony/console": "5.0.*",
-        "symfony/dotenv": "5.0.*",
+        "symfony/console": "5.4.*",
+        "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.3.1",
-        "symfony/framework-bundle": "5.0.*",
+        "symfony/framework-bundle": "5.4.*",
         "symfony/maker-bundle": "^1.18",
         "symfony/monolog-bundle": "^3.0",
-        "symfony/twig-bundle": "5.0.*",
-        "symfony/yaml": "5.0.*",
-        "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "symfony/twig-bundle": "5.4.*",
+        "symfony/yaml": "5.4.*",
+        "twig/extra-bundle": "^3.0",
+        "twig/twig": "^3.0"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.3",
-        "symfony/debug-bundle": "5.0.*",
-        "symfony/stopwatch": "5.0.*",
-        "symfony/web-profiler-bundle": "5.0.*"
+        "symfony/debug-bundle": "5.4.*",
+        "symfony/stopwatch": "5.4.*",
+        "symfony/web-profiler-bundle": "5.4.*"
     },
     "config": {
         "preferred-install": {
@@ -89,7 +88,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "5.0.*"
+            "require": "5.4.*"
         }
     }
 }
